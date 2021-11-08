@@ -77,14 +77,14 @@ header img {
 }
 
 .hero .title {
-  transform: translateY(190px);
+  transform: translateY(240px);
   position: relative;
   z-index: 3;
 }
 
 .hero h1 {
   text-shadow: black 1px 3px 6px;
-  font-size: 8rem;
+  font-size: 7.5rem;
 }
 
 .hero h3 {
@@ -157,12 +157,14 @@ header img {
 .company p {
   position: relative;
   z-index: 1;
-  font-size: 2rem;
-  line-height: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 3.9rem;
 }
 
-.company-info-text {
-  margin-bottom: 40rem;
+.conmpany-text-last {
+  position: absolute;
+  top: 70%;
+  left: 7%;
 }
 
 .company-info .more a {
@@ -179,8 +181,8 @@ header img {
 
 /* hardware section */
 .hardware {
-  width: 70%;
-  height: 80%;
+  width: 50%;
+  height: 25%;
 }
 
 .hardware-card img {
@@ -247,6 +249,10 @@ header img {
   margin-bottom: 2rem;
 }
 
+.contact textarea {
+  width: 70%;
+}
+
 .contact .vision-sight-logo h3 {
   position: absolute;
   bottom: 10%;
@@ -254,10 +260,47 @@ header img {
   font-size: 4rem;
 }
 
+/* footer section */
+footer {
+  padding-bottom: 50px;
+  padding: 40px;
+  background-color: var(--dark);
+  font-size: 2rem;
+}
+
+footer h2 {
+  height: 50%;
+  font-size: 3rem;
+}
+
+footer a {
+  color: var(--body);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(71, 173, 187);
+}
+
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero h3 {
+    width: 400px;
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero .title {
     transform: translateY(-50px);
     text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 6rem;
   }
 
   .hero h3 {
@@ -285,6 +328,11 @@ header img {
     padding: 2rem !important;
   }
 
+  .conmpany-text-last {
+    position: static;
+    margin-top: 30rem;
+  }
+
   .company-info h2 {
     margin-bottom: 4.6rem !important;
   }
@@ -301,5 +349,16 @@ header img {
   .contact h2 {
     font-size: 4.6rem;
     text-align: center;
+  }
+
+  /* hardware */
+  .hardware {
+    width: 70%;
+    height: 25%;
+  }
+
+  /* footer section */
+  footer {
+    padding-top: 15px;
   }
 }
