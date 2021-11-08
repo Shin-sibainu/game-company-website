@@ -55,10 +55,62 @@ header {
 }
 
 header img {
-  width: 2.6rem;
-  cursor: pointer;
+  width: 3.5rem;
 }
 
+/* ----- book-javascript ----- */
+header .book-close-btn {
+  display: block;
+}
+
+header .book-close-btn.active {
+  display: none;
+}
+
+header .book-open-btn {
+  display: none;
+}
+
+header .book-open-btn.active {
+  display: block;
+}
+/* ----- book-javascript ----- */
+
+header .menu-bar {
+  position: absolute;
+  top: 30vh;
+  right: -200px;
+  /* right: -20px; */
+  background: #000;
+  width: 170px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  opacity: 0;
+}
+
+header .menu-bar.active {
+  right: -20px;
+  opacity: 1;
+}
+
+header .menu-bar li {
+  margin-bottom: 3rem;
+}
+header .menu-bar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+header .menu-bar li a:hover {
+  color: rgb(71, 173, 187);
+}
+
+/* hero section */
 .hero {
   background-image: url("./images/another-world.jpg");
   background-position: center;
